@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head><tile>Sorting in array</title></head>
+        <body>
+            <center>
+                <h1>Javascript Array..... Sort and Reverse</h1>
+                <p>Click the button to sort and reverse the array</p>
+                <button onclick="sortfunction()">Sort me</button>
+                <br>
+                <br>
+                <button onclick="reversefunction()">Reverse me</button>
+                
+                <p id="result"></p>
+                <script>
+                    var fruits = ["Grape", "Apple", "Blueberry", "Mango"];
+
+                    document.getElementById("result").innerHTML = fruits;
+                    function sortfunction() {
+                        fruits.sort();
+                        document.getElementById("result").innerHTML = fruits;
+                    }
+                    function reverse() {
+                        fruits.reverse();
+                        document.getElementById("result").innerHTML = fruits;
+
+                    }
+                </script>
+            </center>
+        </body>
+</html>
+    
